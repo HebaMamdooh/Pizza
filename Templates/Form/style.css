@@ -37,6 +37,7 @@ body
     padding: 10px 0;  
     font-size: 16px;
     color: #fff;
+    letter-spacing: 1px;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
@@ -48,6 +49,7 @@ body
     position: absolute;
     top: 0; 
     left: 0;
+    letter-spacing: 1px;
     padding: 10px 0;  
     font-size: 16px;
     color: #fff;
@@ -60,4 +62,15 @@ body
     left: 0;
     color: #f77700;
     font-size: 12px;
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #f77700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
