@@ -3,49 +3,61 @@ body
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-size: cover;
     background: url(wall3.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .box{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;  
+    transform: translate(-50%, -50%);  
     width: 400px;
-    height: 470px;
+    /* height: 460px; */
     padding: 40px;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .6);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .9);
     border-radius: 15px;
 }
+
 .box h2{
     margin: 0 0 30px;
     padding: 0;
     color: #ffffff;
     text-align: center;
 }
+
+.box .inbutbox{
+    position: relative;
+}
+
 .box .inbutbox input{
     width: 100%;
     padding: 10px 0;  
     font-size: 16px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
-    position: relative;
-    border-bottom: solid; 
     background: transparent;
 }
 
 .box .inbutbox label{
     position: absolute;
-    /* top: 0; */
-    left: 10;
+    top: 0; 
+    left: 0;
     padding: 10px 0;  
     font-size: 16px;
     color: #fff;
     pointer-events: none;
+    transition: .8s;
+}
+.box .inbutbox input:focus ~ label,
+.box .inbutbox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: #f77700;
+    font-size: 12px;
 }
