@@ -24,7 +24,7 @@ body
 .box h2{
     margin: 0 0 30px;
     padding: 0;
-    color: #ffffff;
+    color: #f0c334;
     text-align: center;
 }
 
@@ -35,8 +35,9 @@ body
 .box .inbutbox input{
     width: 100%;
     padding: 10px 0;  
-    font-size: 16px;
+    font-size: 17px;
     color: #fff;
+    letter-spacing: 1px;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
@@ -56,8 +57,23 @@ body
 }
 .box .inbutbox input:focus ~ label,
 .box .inbutbox input:valid ~ label{
-    top: -18px;
+    top: -19px;
     left: 0;
-    color: #f77700;
-    font-size: 12px;
+    color: #f0c334;
+    font-size: 15px;
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    /* position: center;
+    left: 50%; */
+    color: #fff;
+    font-size: 16px;
+    background: #eead10;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* box-align: center; */
 }
