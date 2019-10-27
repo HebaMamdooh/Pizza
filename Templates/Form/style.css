@@ -63,7 +63,15 @@ body
     font-size: 12px;
 }
 
-.box input[type="submit"]{
+.box .sub{
+    position: center;
+    padding: auto;  
+    margin: auto;
+    box-align:center;
+    border: #fff;
+}
+
+.box .sub input[type="submit"]{
     background: transparent;
     border: none;
     outline: none;
